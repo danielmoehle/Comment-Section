@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="body" id="body">
+    <div id="firstCommentContainer" >
+    <div class="firstComment">
+        <div class="topHalf">
+            <div class="likeBtns" data-voteState="0" data-likes="8">
+                <button class="likeBtns1" id="upVote">+</button>
+                <p class="totalLikes" id="totalLikes">8</p>
+                <button class="dislikeBtns1" id="downVote">-</button>
+            </div>
+            <img src="image-amyrobson.png" alt="Amy" class="profilePic test">
+            <p class="name">amyrobson <span class="ago"> 1 month ago</span></p>
+            <button class="replyBtn" id="replyBtn"><img src="icon-reply.svg" class="replyImg">Reply</button>
+        </div>
+        <p class="comment">Impressive! Though it seems the drag feature could be improved. but overall 
+            it looks incredible. You've nailed the design and the responsiveness at various 
+            breakpoints works really well.
+            </p>
+    </div>
+
+
+    </div>
+    <div id="secondCommentContainer" >
+        <div class="firstComment">
+            <div class="topHalf">
+                <div class="likeBtns" data-voteState="0" data-likes="6">
+                <button class="likeBtns1" id="secondUpVote">+</button>
+                <p class="totalLikes" id="totalLikes">6</p>
+                <button class="dislikeBtns1" id="secondDownVote">-</button>
+                </div>
+                <img src="image-maxblagun.png" alt="Amy" class="profilePic">
+                <p class="name">maxblagun <span class="ago"> 2 weeks ago</span></p>
+                <button class="replyBtn" id="secondReplyBtn"><img src="icon-reply.svg" class="replyImg">Reply</button>
+            </div>
+            <p class="comment">Impressive! Though it seems the drag feature could be improved. but overall 
+                it looks incredible. You've nailed the design and the responsiveness at various 
+                breakpoints works really well.
+                </p>
+        </div>
+    </div>
+    <div class="postComment" id="postCommentContainer">
+        <img src="image-juliusomo.png" class="userPic">
+        <textarea name="" id="postText" class="postText"></textarea>
+        <button class="postBtn" id="postBtn">SEND</button>
+    </div>
+    <div class="display-none">
+    </div>
+
+</body>
+</html>
