@@ -1,0 +1,579 @@
+.body {
+    background: rgb(231, 231, 231);
+    display: grid;
+    justify-content: center;
+    scrollbar-gutter: auto;
+    overflow: scroll;
+    margin-bottom: 150px;
+}
+
+.firstComment {
+    margin-top: 50px;
+    width: 600px;
+    min-width: 700px;
+    height: auto;
+    background-color: white;
+}
+
+.topHalf {
+    display: flex;
+    margin-top: -10px;
+}
+
+.topHalfEditing {
+    display: flex;
+    margin-top: -50px;
+    margin-left: -15px;
+}
+
+.likeBtns {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+}
+
+.likeBtnsPost {
+    margin-left: -30px;
+    margin-bottom: -55px;
+    width: 30px;
+}
+
+.likeBtns1 {
+    width: 20px;
+    background-color: rgb(185, 185, 185);
+    border: none;
+    color: gray;
+    border-radius: 5px 5px 0 0;
+}
+
+.dislikeBtns1 {
+    width: 20px;
+    background-color: rgb(185, 185, 185);
+    border: none;
+    color: gray;
+    border-radius: 0 0 5px 5px;
+    z-index: 999;
+}
+
+/* #upVote {
+    border-radius: 5px 5px 0 0;
+}
+
+#downVote {
+    border-radius: 0 0 5px 5px;
+} */
+
+.likeBtns1:hover {
+    background-color: rgb(165, 165, 165);
+}
+
+.likeBtns1:active {
+    background-color: rgb(145, 145, 145);
+}
+
+.dislikeBtns1:hover {
+    background-color: rgb(165, 165, 165);
+}
+
+.dislikeBtns1:active {
+    background-color: rgb(145, 145, 145);
+}
+
+.totalLikes {
+    background-color: rgb(185, 185, 185);
+    color: rgb(38, 89, 184);
+    width: 14px;
+    padding-left: 6px;
+    margin-top: -1px;
+    margin-bottom: -2px;
+}
+
+.profilePic {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: 12px;
+}
+
+.replyProfilePic {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+}
+
+.name {
+    position: relative;
+    margin-left: 10px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.replyName {
+    margin-top: -20px;
+    margin-left: 40px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ago {
+    padding-left: 10px;
+    color: gray;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.replyTime {
+    /* display: inline-block; */
+    margin-left: 125px;
+    margin-top: -30px;
+    color: gray;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.replyBody {
+    /* display: flex; */
+    height: auto;
+}
+
+.replyBtn {
+    width: 66px;
+    margin-left: 390px;
+    margin-top: 15px;
+    height: 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: rgb(38, 89, 184);
+
+}
+
+.replyBtn:hover {
+    background-color: #e0dede;
+}
+
+.replyBtn:active {
+    background-color: #bebcbc;
+}
+
+.replyBtn2 {
+    width: 70px;
+    float: right;
+    margin-top: -40px;
+    height: 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    padding-right: 20px;
+    color: rgb(38, 89, 184);;
+}
+
+.replyBtn2:hover {
+    background-color: #e0dede;
+}
+
+.replyBtn2:active {
+    background-color: #bebcbc;
+}
+
+.replyBtnPost {
+    margin-left: 589px;
+    width: 70px;
+    /* float: right; */
+    margin-top: -47px;
+    height: 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    /* padding-right: 20px; */
+    color: rgb(38, 89, 184);
+    /* margin-right: -5px; */
+    position: absolute;
+}
+
+.replyImg {
+    padding-right: 5px;
+}
+
+.replyImgPost {
+    padding-right: 5px;
+    margin-left: -12px;
+    margin-top: 14px;
+}
+
+.comment {
+    margin-left: 45px;
+    margin-right: 30px;
+    word-break: break-all;
+    white-space: normal;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -20px;
+    color: rgb(104, 103, 103);
+}
+
+.commentUpdating {
+    padding-left: 65px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -35px;
+    color: rgb(104, 103, 103);
+}
+
+.replyComment {
+    padding-left: 40px;
+    padding-right: 20px;
+    word-break: break-all;
+    white-space: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 15px;
+    color: rgb(104, 103, 103);
+}
+
+.replyDiv {
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 600px;
+    min-width: 600px;
+    height: auto;
+    background-color: white;
+}
+
+.postComment {
+    display: flex;
+    width: 660px;
+    /* min-width: 670px; */
+    height: auto;
+    background-color: white;
+    position: fixed;
+    margin-left: 317px;
+    margin-top: 450px;
+    padding: 20px;
+}
+
+
+.userPic {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+}
+
+.postText {
+    width: 555px;
+    height: 70px;
+    padding-bottom: 10px;
+    resize: none;
+}
+
+.postText2 {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+.postText2Test {
+    width: 555px;
+    height: 70px;
+    padding-bottom: 10px;
+    resize: none;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+.replyFirstComment {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    margin-top: -50px;
+}
+
+.postBtn {
+    width: 80px;
+    height: 40px;
+    top: 0;
+    margin-left: 10px;
+    background-color: rgb(55, 55, 252);
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.postComment2 {
+    margin-top: 50px;
+    background-color: white;
+    width: 660px;
+    padding: 20px;
+    display: flex;
+}
+
+.postComment2nd {
+    margin-top:5px;
+}
+
+.firstCommentEditing {
+    margin-top: 50px;
+    margin-left: 80px;
+    width: 620px;
+    min-width: 500px;
+    height: auto;
+    background-color: white;
+}
+
+.likeBtnsEditing {
+    margin-left: -10px;
+    margin-right: 10px;
+    margin-top: -35px;
+}
+
+.postComment2Editing {
+    /* margin-top: 50px; */
+    background-color: white;
+    width: 580px;
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+}
+
+.userPic2Editing {
+    width: 25px;
+    height: 25px;
+    margin-top: -35px;
+}
+
+.nameEditing {
+    display: block;
+    margin-top: -33px;
+    margin-left: 50px;
+    margin-right: -297px;
+    width: 300px;
+    margin-left: 10px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.agoEditing {
+    color: gray;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.deleteBtn {
+    background: none;
+    border: none;
+    color: red;
+    margin-left: 560px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.deleteBtnPost {
+    background: none;
+    border: none;
+    color: red;
+    margin-left: 510px;
+    margin-top: -36px;
+    position: absolute;
+}
+
+
+.postText2Editing {
+    width: 620px;
+    height: 70px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    padding-top: 3px;
+    border-radius: 5px;
+    /* margin-left: 40px; */
+    resize: none;
+}
+
+.deleteBtnEditing {
+    background: none;
+    border: none;
+    color: red;
+    margin-left: 450px;
+    position: absolute;
+    margin-top: -35px;
+}
+
+.deleteBtnUpdating {
+    background: none;
+    border: none;
+    color: red;
+    margin-left: 450px;
+    position: absolute;
+    margin-top: -40px;
+}
+
+
+.updateBtn {
+    background-color: rgb(63, 63, 252);
+    width: 80px;
+    height: 40px;
+    color: white;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: -60px;
+    border: none;
+    float: right;
+}
+
+.updateBtn:hover {
+    background-color: rgb(47, 47, 252);
+}
+
+.updateBtn:active {
+    background-color: rgb(35, 35, 247);
+}
+
+.deleteBtn:hover {
+    background-color: #d6d3d3;
+    border-radius: 5px;
+}
+
+.deleteBtn:active {
+    background-color: #bebcbc;
+    border-radius: 5px;
+}
+
+.deleteIcon {
+    padding-right: 8px;
+}
+
+.editBtn {
+    background: none;
+    border: none;  
+    margin-left: 635px;
+    margin-top: 10px;
+    position: absolute;
+    color: rgb(38, 89, 184);
+}
+
+.editBtnEditing {
+    background: none;
+    border: none;  
+    margin-left: 530px;
+    margin-top: -35px;
+    position: absolute;
+    color: rgb(38, 89, 184);
+}
+
+.editBtnUpdating {
+    background: none;
+    border: none;  
+    margin-left: 530px;
+    margin-top: -40px;
+    position: absolute;
+    color: rgb(38, 89, 184);
+}
+
+.editBtn:hover {
+    background-color: #d6d3d3;
+    border-radius: 5px;
+}
+
+.editBtn:active {
+    background-color: #bebcbc;
+    border-radius: 5px;
+}
+
+.editIcon {
+    padding-right: 8px;
+}
+
+.display-none {
+    display: none;
+}
+
+.postText2 {
+    width: 555px;
+    resize: none;
+    height: 60px;
+    padding-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.postBtn2 {
+    width: 80px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: rgb(55, 55, 252);
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.postBtn2:hover {
+    background-color: rgb(47, 47, 224);
+}
+
+.postBtn2:active {
+    background-color: rgb(40, 40, 192);
+}
+
+.replyContainer {
+    display: flex;
+}
+
+.smallerReplyContainer {
+    margin-top: 10px;
+    width: 600px;
+    min-width: 700px;
+    height: auto;
+    /* background-color: white; */
+}
+
+#postReplyContainer {
+    padding-top: 50px;
+}
+
+.replyHeader {
+    width: 600px;
+    margin-left: 80px;
+    padding: 10px;
+    height: auto;
+    background-color: white;
+}
+
+.postDiv {
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 600px;
+    min-width: 600px;
+    height: auto;
+    background-color: white;
+}
+
+.postDivMain {
+    display: flex;
+}
+
+.postHeader {
+    margin-top: 50px;
+    width: 660px;
+    min-width: 500px;
+    height: auto;
+    background-color: white;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+/* .test {
+    background-color: white;
+    width: 700px;
+    height: auto;
+    margin-left: -20px;    
+} */
+
